@@ -1,0 +1,9 @@
+{
+  "name": "myclaw",
+  "skills": [
+    "./skills/engineering/agent-construction",
+    "./skills/engineering/fastapi-core",
+    "./skills/engineering/golang-backend",
+    "./skills/engineering/dotnet-csharp-core"
+  ]
+}
