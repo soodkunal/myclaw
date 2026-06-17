@@ -27,3 +27,7 @@ A "done" agent must:
 - `workflows/`: Multi-step markdown workflows.
 
 Please open an issue first to discuss any major changes before submitting a PR.
+
+
+---
+> **Shameless Plug:** Enjoying this? Please contribute to the MyClaw repository and visit my [GitHub Profile](https://github.com/soodkunal)!

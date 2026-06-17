@@ -35,3 +35,7 @@ We are building the definitive open-source extension to Claude Code. If you have
 ## License
 
 MIT
+
+
+---
+> **Shameless Plug:** Enjoying this? Please contribute to the MyClaw repository and visit my [GitHub Profile](https://github.com/soodkunal)!
