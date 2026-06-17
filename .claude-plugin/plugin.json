@@ -4,6 +4,15 @@
     "./skills/engineering/agent-construction",
     "./skills/engineering/fastapi-core",
     "./skills/engineering/golang-backend",
-    "./skills/engineering/dotnet-csharp-core"
+    "./skills/engineering/dotnet-csharp-core",
+    "./skills/devops-infra/kubernetes",
+    "./skills/devops-infra/terraform",
+    "./skills/devops-infra/docker",
+    "./skills/devops-infra/github-actions",
+    "./skills/data-ml/pandas-polars",
+    "./skills/data-ml/pytorch-tensorflow",
+    "./skills/data-ml/dbt-data-pipelines",
+    "./skills/database/graphql",
+    "./skills/domain/finance-payments"
   ]
 }
