@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/retroui/Button";
 import { Card } from "@/components/retroui/Card";
 import { Accordion } from "@/components/retroui/Accordion";
@@ -38,7 +40,7 @@ export default function Home() {
         </div>
 
         {/* Terminal Snippet */}
-        <div className="mt-12 bg-black text-[#ffdb33] font-mono p-6 rounded border-4 border-black shadow-[8px_8px_0_0_#000] w-full max-w-2xl text-left transform rotate-1">
+        <div className="mt-12 bg-black text-[#F5EFD9] font-mono p-6 rounded border-4 border-black shadow-[8px_8px_0_0_#000] w-full max-w-2xl text-left transform rotate-1">
           <div className="flex gap-2 mb-4">
             <div className="w-3 h-3 rounded-full bg-red-500"></div>
             <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
@@ -50,7 +52,7 @@ export default function Home() {
       </section>
 
       {/* Features Grid */}
-      <section className="w-full max-w-6xl px-6 py-24 border-t-4 border-black bg-[#ffdb33]">
+      <section className="w-full max-w-6xl px-6 py-24 border-t-4 border-black bg-primary">
         <h2 className="text-4xl md:text-5xl font-head font-black uppercase tracking-tight mb-16 text-center shadow-[2px_2px_0_0_#000] border-2 border-black inline-block px-4 py-2 bg-white transform -rotate-1">
           Het Ecosysteem
         </h2>
@@ -140,12 +142,12 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="w-full border-t-4 border-black p-12 bg-black text-white text-center">
-        <h3 className="font-head text-3xl font-black tracking-widest mb-6 text-[#ffdb33]">MYCLAW</h3>
+        <h3 className="font-head text-3xl font-black tracking-widest mb-6 text-[#F5EFD9]">MYCLAW</h3>
         <p className="font-sans font-medium max-w-md mx-auto text-white/70">
           The ultimate knowledge system to tame the AI coding era.
         </p>
         <div className="mt-12 pt-8 border-t-2 border-white/20">
-          <p className="font-sans font-bold text-[#ffdb33]">
+          <p className="font-sans font-bold text-[#F5EFD9]">
             Shameless Plug: Enjoying this? Please contribute to the MyClaw repository and visit my <a href="https://github.com/soodkunal" className="underline hover:text-white transition">GitHub Profile</a>!
           </p>
         </div>
