@@ -1,0 +1,10 @@
+{
+  "name": "data-example",
+  "skills": [
+    "python",
+    "pandas-polars",
+    "dbt",
+    "github-actions"
+  ],
+  "agents": ["architect", "security"]
+}

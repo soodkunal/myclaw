@@ -1,0 +1,10 @@
+{
+  "name": "fastapi-example",
+  "skills": [
+    "python",
+    "postgresql",
+    "docker",
+    "git-conventions"
+  ],
+  "agents": ["reviewer", "security"]
+}

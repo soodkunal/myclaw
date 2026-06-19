@@ -1,0 +1,9 @@
+{
+  "name": "go-example",
+  "skills": [
+    "kubernetes",
+    "terraform",
+    "docker"
+  ],
+  "agents": ["reviewer"]
+}

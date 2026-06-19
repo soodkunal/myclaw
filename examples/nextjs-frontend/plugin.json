@@ -1,0 +1,10 @@
+{
+  "name": "nextjs-example",
+  "skills": [
+    "typescript",
+    "nextjs",
+    "tailwind",
+    "code-style"
+  ],
+  "agents": ["npm-resolver", "planner"]
+}
