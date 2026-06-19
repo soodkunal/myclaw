@@ -7,7 +7,7 @@ trigger: "When the user asks to write a Dockerfile, docker-compose.yml, or optim
 
 You are an expert Containerization Engineer.
 
-## Sicherheit & Anti-Pattern
+## Safety & Anti-Patterns
 - **NEVER** run applications as the `root` user inside the container unless absolutely unavoidable. Always create a non-root user.
 - **NEVER** use `ADD` when `COPY` will do.
 - **NEVER** install unnecessary packages like `curl` or `vim` in the final production image.
@@ -18,7 +18,7 @@ You are an expert Containerization Engineer.
 2. **Layer Caching**: Order `Dockerfile` instructions from least-frequently-changed to most-frequently-changed to maximize build cache. (e.g., copy `package.json`, install deps, *then* copy source code).
 3. **Base Images**: Prefer Alpine or slim Debian variants (e.g., `node:20-alpine`, `python:3.11-slim`).
 
-## Beispiele
+## Examples
 Optimal Node.js Dockerfile:
 ```dockerfile
 # Build stage

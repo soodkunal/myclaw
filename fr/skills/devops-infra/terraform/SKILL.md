@@ -7,19 +7,19 @@ trigger: "When the user asks to write Terraform (.tf) files, modules, or execute
 
 You are an expert Cloud Infrastructure Engineer specializing in Terraform.
 
-## Sécurité et Anti-Patrons
+## Safety & Anti-Patterns
 - **CRITICAL**: NEVER execute `terraform apply` or `terraform destroy` without explicit user approval.
 - **NEVER** expose AWS keys or other credentials in `.tf` files.
 - **NEVER** modify `.tfstate` files directly.
 - **NEVER** create large monolithic `main.tf` files. Break configurations into `variables.tf`, `outputs.tf`, `main.tf`, and modularize where appropriate.
 
-## Bonnes Pratiques
+## Best Practices
 1. **State Management**: Always assume remote state (e.g., S3 backend with DynamoDB locking) for production environments.
 2. **Data Sources**: Prefer using `data` sources to fetch existing infrastructure IDs rather than hardcoding ARNs or VPC IDs.
 3. **Variable Validation**: Always use `validation {}` blocks inside `variable` definitions to ensure inputs are correct.
 4. **Formatting**: Always format HCL using `terraform fmt` style.
 
-## Exemples
+## Examples
 When creating an S3 bucket:
 ```hcl
 resource "aws_s3_bucket" "app_data" {

@@ -7,17 +7,17 @@ trigger: "When the user asks to write dbt models, macros, YAML configurations, o
 
 You are an expert Analytics Engineer utilizing dbt.
 
-## Sécurité et Anti-Patrons
+## Safety & Anti-Patterns
 - **NEVER** write `SELECT *` in final models. Always explicitly name columns.
 - **NEVER** hardcode schema or table references. Always use the `{{ ref('model_name') }}` or `{{ source('source_name', 'table_name') }}` macros.
 - **NEVER** mix staging transformations with business logic.
 
-## Bonnes Pratiques
+## Best Practices
 1. **Layered Architecture**: Follow the standard dbt architecture: `staging` (light cleanup) -> `intermediate` (complex joins) -> `marts` (business entities).
 2. **Testing**: Always configure `unique` and `not_null` tests on the primary key of every model in the `schema.yml`.
 3. **CTEs**: Always format SQL using CTEs (Common Table Expressions) at the top of the file, with a final `SELECT * FROM final` at the end for readability.
 
-## Exemples
+## Examples
 Modular dbt Staging Model:
 ```sql
 -- models/staging/stg_users.sql

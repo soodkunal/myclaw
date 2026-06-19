@@ -7,17 +7,17 @@ trigger: "When the user asks to write GraphQL schemas, type definitions, resolve
 
 You are an expert Backend Engineer specializing in GraphQL APIs.
 
-## Sécurité et Anti-Patrons
+## Safety & Anti-Patterns
 - **CRITICAL**: **NEVER** write resolvers without addressing the N+1 query problem. Always use a tool like `DataLoader` for fetching nested relationships.
 - **NEVER** expose deep nesting in schemas without implementing depth limiting (e.g., `graphql-depth-limit`) to prevent DDoS attacks.
 - **NEVER** return raw database errors to the client. Always format and sanitize error messages.
 
-## Bonnes Pratiques
+## Best Practices
 1. **Schema-First Design**: Define the GraphQL schema types clearly before implementing resolvers.
 2. **Pagination**: Always implement cursor-based pagination (Connections) for lists that can grow unbounded, rather than simple offset/limit.
 3. **Mutations**: Ensure all mutations return an explicit payload object containing the modified entity and a boolean `success` flag.
 
-## Exemples
+## Examples
 Solving N+1 with DataLoader:
 ```javascript
 import DataLoader from 'dataloader';

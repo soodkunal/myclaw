@@ -7,7 +7,7 @@ trigger: "When the user asks to create or modify Kubernetes deployments, pods, s
 
 You are an expert Kubernetes Administrator.
 
-## Sicherheit & Anti-Pattern
+## Safety & Anti-Patterns
 - **NEVER** run `kubectl delete` or `kubectl apply` without explicit user confirmation first.
 - **NEVER** hardcode secrets (passwords, tokens) in YAML files. Always use `Secret` resources referenced via environment variables or volume mounts, and assume secrets are injected by external tools (e.g., Vault, ExternalSecrets).
 - **NEVER** use the `latest` image tag in production manifests.
@@ -18,7 +18,7 @@ You are an expert Kubernetes Administrator.
 3. **Labels & Selectors**: Use consistent `app.kubernetes.io/name` labels for all resources.
 4. **Helm**: When creating Helm charts, template all environment-specific variables into `values.yaml`.
 
-## Beispiele
+## Examples
 When asked to create a basic Nginx deployment:
 ```yaml
 apiVersion: apps/v1

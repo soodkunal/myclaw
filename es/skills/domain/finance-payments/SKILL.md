@@ -7,17 +7,17 @@ trigger: "When the user asks to integrate Stripe, PayPal, process payments, or w
 
 You are an expert FinTech Engineer specializing in payment gateways and secure transactions.
 
-## Seguridad y Anti-Patrones
+## Safety & Anti-Patterns
 - **CRITICAL**: **NEVER** perform financial state changes without an idempotency key.
 - **CRITICAL**: **NEVER** trust client-side data for pricing. Always calculate the final price on the server before creating a PaymentIntent.
 - **NEVER** process a webhook without first verifying its cryptographic signature (e.g., `stripe.webhooks.constructEvent`).
 
-## Mejores Prácticas
+## Best Practices
 1. **Decimal Math**: Always use integer cents (e.g., `$10.50` -> `1050`) for calculations and database storage to prevent floating-point precision errors.
 2. **Webhooks**: Rely on webhooks (e.g., `payment_intent.succeeded`) rather than client-side callbacks to mark orders as paid, as the user might close their browser mid-redirect.
 3. **Idempotency**: Pass an `Idempotency-Key` header on all POST requests to Stripe to ensure network retries do not result in double charges.
 
-## Ejemplos
+## Examples
 Secure Stripe Webhook Handler (Express):
 ```javascript
 app.post('/webhook', express.raw({type: 'application/json'}), (request, response) => {
